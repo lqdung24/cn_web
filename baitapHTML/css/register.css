@@ -1,0 +1,57 @@
+/* Registration form: uses the existing website palette and typography. */
+#registration-form {
+	color: #525252;
+	font-size: 14px;
+	line-height: 24px;
+}
+#registration-form fieldset {
+	min-width: 0;
+	margin: 0 0 24px;
+	padding: 12px 18px 18px;
+	border: 1px solid #d6ae6a;
+}
+#registration-form legend {
+	padding: 0 8px;
+	color: #7e501c;
+	font-weight: bold;
+}
+#registration-form .form-row + .form-row {
+	margin-top: 12px;
+}
+#registration-form .form-row > label:first-child,
+#registration-form .group-label {
+	display: block;
+	margin-bottom: 4px;
+}
+#registration-form .form-row > input:not([type="checkbox"]),
+#registration-form select,
+#registration-form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 8px;
+	border: 1px solid #d6ae6a;
+	background-color: #fffefd;
+	color: inherit;
+	font: inherit;
+}
+#registration-form textarea {
+	display: block;
+	resize: vertical;
+}
+#registration-form .choices {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 20px;
+}
+#registration-form input[type="radio"],
+#registration-form input[type="checkbox"] {
+	margin: 0 4px 0 0;
+	accent-color: #7e501c;
+}
+#registration-form .form-actions {
+	display: flex;
+	gap: 12px;
+}
+#registration-form .btn {
+	border: 0;
+}

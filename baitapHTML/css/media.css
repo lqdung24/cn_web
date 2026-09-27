@@ -1,0 +1,62 @@
+/* Only the new multimedia content; reuse the existing layout and typography. */
+#media .meta {
+	font-style: italic;
+}
+#media figure {
+	margin: 0 0 30px;
+	text-align: center;
+}
+#media figure img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+#media figcaption {
+	margin-top: 8px;
+	color: #525252;
+	font-size: 14px;
+	line-height: 24px;
+}
+#media figcaption a {
+	color: inherit;
+}
+#media figcaption a:hover {
+	color: #e19320;
+}
+#media video,
+#media audio,
+#media iframe {
+	display: block;
+	width: 100%;
+	max-width: 460px;
+	margin: 0 auto;
+}
+#media video {
+	height: auto;
+}
+#media iframe {
+	height: 260px;
+	border: 0;
+}
+
+/* Mở rộng ảnh minh họa */
+#media #photos figure {
+    width: calc(100% + 60px);
+    max-width: none;
+    margin: 0 0 30px -30px;
+    text-align: center;
+}
+
+#media #photos figure img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+#media #photos figcaption {
+    margin-top: 8px;
+}
