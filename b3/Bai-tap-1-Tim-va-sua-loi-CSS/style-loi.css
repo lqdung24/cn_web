@@ -158,8 +158,10 @@ a {
 
 .card img {
     width: 100%;
-    display: block;
+    height: 200px;
+    border-radius: 6px;
     object-fit: cover;
+    display: block;
 }
 
 .card-body h3 {
@@ -174,9 +176,17 @@ a {
 }
 
 .card-body .price {
-	color: #c0392b;
+	/* color: #c0392b;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 18px; */
+
+        position: absolute;
+    bottom: 20;
+    left: 20;
+
+    color: #c0392b;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* ===== Nút lên đầu trang ===== */
