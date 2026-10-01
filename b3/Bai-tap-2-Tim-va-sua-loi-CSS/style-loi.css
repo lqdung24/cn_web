@@ -31,15 +31,15 @@ a {
 }
 
 .page {
-	overflow-x: hidden;
+	overflow-x: clip; /* Không tạo vùng cuộn cản trở sticky. */
 }
 
-/* ===== Header / thanh điều hướng ===== */
+/* Thanh điều hướng */
 .site-header {
 	background: #2b2b2b;
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	z-index: 100; /* Giữ menu phía trên hero và nội dung. */
 }
 
 .header-inner {
@@ -73,7 +73,7 @@ a {
 	color: #fff;
 }
 
-/* ===== Hero ===== */
+/* Hero */
 .hero {
 	position: relative;
 	height: 360px;
@@ -83,7 +83,7 @@ a {
 .hero-bg {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: cover; /* Phủ kín khung mà không làm méo ảnh. */
 	transform: scale(1.08);
 }
 
@@ -91,7 +91,7 @@ a {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); /* Căn giữa khối tiêu đề trên ảnh. */
 	width: 80%;
 	max-width: 560px;
 	text-align: center;
@@ -118,7 +118,7 @@ a {
 	border-radius: 4px;
 }
 
-/* ===== Khu sản phẩm ===== */
+/* Khu sản phẩm */
 .products {
 	max-width: 1000px;
 	margin: -48px auto 48px;
@@ -143,8 +143,8 @@ a {
 .card {
 	flex: 0 0 calc((100% - 48px) / 3);
 	min-height: 320px;
-	position: relative;
-	box-sizing: content-box;
+	position: relative; /* Mốc định vị riêng cho nhãn của từng thẻ. */
+	box-sizing: border-box; /* Tính padding và border trong độ rộng ba cột. */
 	background: #fff;
 	border: 1px solid #e0d8c8;
 	border-radius: 8px;
@@ -156,6 +156,7 @@ a {
 	position: absolute;
 	top: 12px;
 	right: 12px;
+	z-index: 3; /* Nằm trên ảnh sản phẩm có z-index: 2. */
 	background: #c0392b;
 	color: #fff;
 	font-size: 14px;
@@ -191,9 +192,9 @@ a {
 	font-size: 18px;
 }
 
-/* ===== Nút lên đầu trang ===== */
+/* Nút lên đầu trang */
 .back-to-top {
-	position: fixed;
+	position: fixed; /* Giữ nút tại một vị trí trên màn hình khi cuộn. */
 	bottom: 24px;
 	right: 24px;
 	width: 48px;
@@ -208,7 +209,7 @@ a {
 	z-index: 200;
 }
 
-/* ===== Footer ===== */
+/* Footer */
 .site-footer {
 	padding: 32px 24px;
 	background: #2b2b2b;
