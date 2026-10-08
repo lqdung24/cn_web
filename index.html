@@ -85,6 +85,13 @@
       font-size: 15px;
       font-weight: 700;
     }
+    a.open { text-decoration: none; }
+    a.open:hover { text-decoration: underline; }
+    a.open:focus-visible {
+      outline: 3px solid #315fb4;
+      outline-offset: 5px;
+    }
+    .open + .open { margin-top: 12px; }
     @media (max-width: 600px) {
       main { margin: 40px auto; }
       .lessons { grid-template-columns: 1fr; }
@@ -117,6 +124,23 @@
             <span class="lesson-number">Bài 2</span>
             <h2>Bài tập HTML</h2>
             <p class="description">Website gồm các trang Home, About, News và Blog.</p>
+            <span class="open">Mở bài tập <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li>
+          <div class="lesson">
+            <span class="lesson-number">Bài 3</span>
+            <h2>Tìm và sửa lỗi CSS</h2>
+            <p class="description">Thực hành tìm và sửa lỗi CSS qua hai bài tập.</p>
+            <a class="open" href="./b3/Bai-tap-1-Tim-va-sua-loi-CSS/trang.html">Mở bài tập 1 <span aria-hidden="true">→</span></a>
+            <a class="open" href="./b3/Bai-tap-2-Tim-va-sua-loi-CSS/trang.html">Mở bài tập 2 <span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+        <li>
+          <a class="lesson" href="./b4/trang-goc.html">
+            <span class="lesson-number">Bài 4</span>
+            <h2>Xây dựng CSS responsive</h2>
+            <p class="description">Thiết kế giao diện responsive cho website xưởng in Blakletterpress.</p>
             <span class="open">Mở bài tập <span aria-hidden="true">→</span></span>
           </a>
         </li>
